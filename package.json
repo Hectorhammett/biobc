@@ -1,0 +1,28 @@
+{
+  "name": "biobc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline",
+    "build": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular": "^1.6.3",
+    "angular-scroll": "^1.0.0",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.27.3",
+    "file-loader": "^0.10.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.0",
+    "node-sass": "^4.5.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.3",
+    "style-loader": "^0.14.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.2"
+  }
+}

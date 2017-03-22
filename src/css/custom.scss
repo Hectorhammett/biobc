@@ -1,0 +1,127 @@
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/variables.scss';
+section{
+    &.section-middle-align{
+        position: relative;
+        width:100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .bg-overlay, .color-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    &#section-1{
+        color:white;
+        .bg-overlay{
+            background-image: url('../img/bg1.jpeg');
+            background-size: cover;
+            transform: scale(1.05);
+            background-attachment: fixed;
+            background-position: 0px 65%;
+        }
+
+        .color-overlay{
+            background-color: #337ab7;
+            opacity:0.3;
+        }
+
+        h3{
+            font-size: 1.5em;
+        }
+    }
+
+    &#section-2{
+        margin-top: 50px;
+        padding-bottom: 50px;
+        h1{
+            font-weight: 600;
+        }
+        h1,h2,h3,h4,h5{
+            font-family: $font-family-sans-serif
+        }
+        .capacity{
+            margin:30px 0;
+        }
+        .fa{
+            color: #2c699d
+        }
+    }
+
+    &#section-3{
+        background-color:$brand-success;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        h1{
+            font-weight: 600;
+            color:#fff;
+        }
+        h4{
+            margin-bottom: 30px;
+            color: #fff;
+            font-size:1.5em;
+        }
+        table{
+            background-color: #fff;
+            tr td{
+                vertical-align: middle;
+                h4{
+                    font-size:1.3em;
+                }
+                color: #333;
+                .fa{
+                    color: $brand-primary;
+                    font-size:3em;
+                }
+            }
+        }
+    }
+
+    &#section-4{
+        padding:50px 0;
+        h1{
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+    }
+
+    &#section-5{
+        position: relative;
+        color: white;
+        overflow: hidden;
+        .container{
+            padding-top:50px;
+            padding-bottom: 50px;
+        }
+        .bg-overlay{
+            background-image: url('../img/tj.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            filter: blur(3px);
+            opacity: 0.9;
+            transform: scale(1.05);
+        }
+        .color-overlay{
+            background-color: $brand-primary;
+            opacity:0.45;
+        }
+        .fa{
+            font-size: 2em;
+            width: 40px;
+        }
+    }
+}
+
+footer{
+    padding:50px;
+    background-color: #4A4A4A;
+    color: #fff;
+    .logo-holder{
+        margin-top: 11px;
+    }
+}
